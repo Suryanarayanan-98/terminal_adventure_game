@@ -12,14 +12,13 @@ print('here, scenerio you find youself hiding in the bushes infront of a palace!
       '2.walk away from bushes get into forest                                  '
       '3.get into the palace by window!                                         ' )
 
-first_choice = 0
 first_choice = int(input('enter your choice by number')) 
  
 if first_choice == 1:
    print('woops, you were noticed by guards!') 
-elif first_choice ==2:
+elif first_choice == 2:
    print('sorry, you cant make it and you were caught')
-elif first_choice ==3 :
+elif first_choice == 3 :
    print('you made it to, what you gonna do now!')
    print('youve seen stairs going up but it has guards,'
            'on ground floor you see two doors' 
@@ -27,56 +26,53 @@ elif first_choice ==3 :
    second_choice = int(input('what you do, 1. get into the opened door    '
                              '             2. try to get into closed door '
                              '             3.  go upstairs                '))
-else:
-    print('input is invalid dude!')
-
-
-if second_choice == 1:
-  print('congratss, you still alive and you encountered one sleeping guard')
-  print('and theres one more door inside the room youre in!')  
-  print('it appears to be , the sleeping guard has its key..')
-  third_choice = int(input('what you gonna do'
-  '1.get a closer look on closed door'
-  '2.get those keys from tht sleepy guard'
-  '3. backoff silently'))
-elif second_choice == 2:
-  print('goddamn..its locked! dont have much time!')  
-  print('and oh dear, you get caught...')
-elif second_choice == 3:
-  print('oh theres so much guards and you re doomed')
-  print('game over')
-else:
-  print('invalid')  
-
-if third_choice ==1:
-  print('gameover! you were paralyzed by sudden attack')  
-elif third_choice == 2:
- print('youve unlocked it , you are now at new room')
- print('you found one golden sword , just like that..')
- print('you also have one exit point through window and its totally upto you!')
- print("and and theres another door which is not even locked,")
- fourth_choice = int(input('what you gonna do:''1.pick the sword and exit via window'
+   if second_choice == 1:
+    print('congratss, you still alive and you encountered one sleeping guard')
+    print('and theres one more door inside the room youre in!')  
+    print('it appears to be , the sleeping guard has its key..')
+    third_choice = int(input('what you gonna do'
+    '1.get a closer look on closed door'
+    '2.get those keys from tht sleepy guard'
+    '3. backoff silently'))
+    if third_choice == 1:
+      print('gameover! you were paralyzed by sudden attack')  
+    elif third_choice == 2:
+      print('youve unlocked it , you are now at new room')
+      print('you found one golden sword , just like that..')
+      print('you also have one exit point through window and its totally upto you!')
+      print("and and theres another door which is not even locked,")
+      fourth_choice = int(input('what you gonna do:''1.pick the sword and exit via window'
                            '2.pick the sword and lets see whats behind door'
                            '3.backoff bro'))
+      if fourth_choice == 1:
+       print('well done my boy!...')
+       print('it was great move tho')
+       print('you have incoming nad thanks for participating')
+      elif fourth_choice ==2:
+        print('oh i didnt see tht coming, another waiting for to assault you')
+        rand = random.randint(0,3)
+        sand = random.randint(0,3)
+        if rand > sand:
+          print('you won,....and found one map, which says')
+          print('the bushes where you started actually has the treasure beneath it!')
+        else:
+          print('thanks for participatng!..chocalate shower for ya!!') 
+          print('🍫🍬🍭🍫🍬🍭🍫🍬🍭🍫🍬🍭') 
+      else : 
+       print('invalid input😪') 
 
-elif third_choice ==3:
-  print('you got company, gameover!!!')
+    elif third_choice ==3:
+       print('you got company, gameover!!!')
+    else:
+       print('invald input')
+   elif second_choice == 2:
+    print('goddamn..its locked! dont have much time!')  
+    print('and oh dear, you get caught...')
+   elif second_choice == 3:
+    print('oh theres so much guards and you re doomed')
+    print('game over')
+   else:
+    print('invalid') 
 else:
-  print('invald input')
+   print('input is invalid dude!')
 
-if fourth_choice == 1:
-  print('well done my boy!...')
-  print('it was great move tho')
-  print('you have incoming nad thanks for participating')
-elif fourth_choice ==2:
-  print('oh i didnt see tht coming, another waiting for to assault you')
-  rand = random.randint(0,3)
-  sand = random.randint(0,3)
-  if rand > sand:
-    print('you won,....and found one map, which says')
-    print('the bushes where you started actually has the treasure beneath it!')
-  else:
-    print('thanks for participatng!..chocalate shower for ya!!') 
-    print('🍫🍬🍭🍫🍬🍭🍫🍬🍭🍫🍬🍭') 
-else : 
-  print('invalid input😪') 
