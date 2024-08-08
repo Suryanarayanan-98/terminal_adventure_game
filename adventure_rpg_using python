@@ -1,4 +1,4 @@
-# Write code below 💖
+#adventure_game❤❤
 import random
 print( '       ggggggg   gggg  g  gg  g   ggggggg   ')
 print( '       gg   gg   g  g  gg gg gg   gg        ')
@@ -23,17 +23,17 @@ elif first_choice == 3 :
    print('youve seen stairs going up but it has guards,'
            'on ground floor you see two doors' 
            'door on left side is closed but the door at right side is open')
-   second_choice = int(input('what you do, 1. get into the opened door    '
-                             '             2. try to get into closed door '
+   second_choice = int(input('what you do, 1. get into the opened door\n'
+                             '             2. try to get into closed door\n'
                              '             3.  go upstairs                '))
    if second_choice == 1:
     print('congratss, you still alive and you encountered one sleeping guard')
     print('and theres one more door inside the room youre in!')  
     print('it appears to be , the sleeping guard has its key..')
-    third_choice = int(input('what you gonna do'
-    '1.get a closer look on closed door'
-    '2.get those keys from tht sleepy guard'
-    '3. backoff silently'))
+    third_choice = int(input('what you gonna do\n'
+    '1.get a closer look on closed door\n'
+    '2.get those keys from tht sleepy guard\n'
+    '3. backoff silently\n'))
     if third_choice == 1:
       print('gameover! you were paralyzed by sudden attack')  
     elif third_choice == 2:
@@ -41,15 +41,15 @@ elif first_choice == 3 :
       print('you found one golden sword , just like that..')
       print('you also have one exit point through window and its totally upto you!')
       print("and and theres another door which is not even locked,")
-      fourth_choice = int(input('what you gonna do:''1.pick the sword and exit via window'
-                           '2.pick the sword and lets see whats behind door'
-                           '3.backoff bro'))
+      fourth_choice = int(input('what you gonna do:\n''1.pick the sword and exit via window\n'
+                           '2.pick the sword and lets see whats behind door\n'
+                           '3.backoff bro\n'))
       if fourth_choice == 1:
        print('well done my boy!...')
        print('it was great move tho')
        print('you have incoming nad thanks for participating')
       elif fourth_choice ==2:
-        print('oh i didnt see tht coming, another waiting for to assault you')
+        print('oh i didnt see that coming, another one waiting for to assault you')
         rand = random.randint(0,3)
         sand = random.randint(0,3)
         if rand > sand:
